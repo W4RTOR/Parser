@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://policies.google.com/'
+url = 'https://pythonfree.wixsite.com/my-site'
 page = requests.get(url)
 soup = BeautifulSoup(page.content, 'html.parser')
 print(soup)
