@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 url = 'https://policies.google.com/'
 page = requests.get(url)
 soup = BeautifulSoup(page.content, 'html.parser')
-#print(soup)
+print(soup)
 print("1")
 # Вы можете искать конкретные теги и атрибуты
 title = soup.find('title').text
